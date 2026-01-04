@@ -1,0 +1,43 @@
+name: isaac_pusht
+
+# 定义标准图像大小
+image_shape: [3, 96, 96]
+dataset_path: /home/jiji/workspace/isaac/project/PushT_PD/data/isaac_pusht.zarr
+
+shape_meta: &shape_meta
+  # 观测空间 (Input)
+  obs:
+    img_global:
+      shape: ${task.image_shape}
+      type: rgb
+    img_wrist:
+      shape: ${task.image_shape}
+      type: rgb
+    agent_pos:
+      shape: [8] # 7关节 + 1夹爪
+      type: low_dim
+  # 动作空间 (Output)
+  action:
+    shape: [8]
+
+env_runner:
+  _target_: diffusion_policy.env_runner.isaac_runner.IsaacEmptyRunner
+
+
+dataset:
+  # ★★★ 核心：使用 Robomimic 加载器读取 HDF5 ★★★
+  _target_: diffusion_policy.dataset.isaac_dataset.IsaacDataset
+  # 数据集路径
+  zarr_path: /home/jiji/workspace/isaac/project/PushT_PD/data/isaac_pusht.zarr
+  # 对应 shape_meta 里的 key
+
+  
+  # 历史视窗
+  horizon: ${horizon}
+  pad_before: ${eval:'${n_obs_steps}-1'}
+  pad_after: ${eval:'${n_action_steps}-1'}
+  
+  # 数据增强
+  use_cache: True
+  seed: 42
+  val_ratio: 0.02 # 验证集比例

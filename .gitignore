@@ -1,0 +1,31 @@
+# --- Python 通用 ---
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.idea/
+*.egg-info/
+dist/
+build/
+
+# --- Isaac Sim / Diffusion Policy 专用 ---
+# 忽略所有数据集
+data/
+!data/.gitkeep  # (可选) 保留 data 文件夹结构但不存内容
+
+# 忽略训练输出日志和模型权重 (太大了)
+diffusion_policy-main/data/outputs/
+
+# 忽略临时生成的pkl文件
+scripts/*.pkl
+
+# 忽略 Isaac Sim 的临时文件
+*.usda
+*.usdc
+
+# 忽略 WandB 日志
+wandb/
+
+# 忽略环境文件夹 (如果你把conda环境装在项目里了)
+env/
+venv/

@@ -23,3 +23,5 @@
 ```bash
 # 安装本项目包
 pip install -e .
+
+数据与模型下载:https://drive.google.com/drive/folders/1q6FfucyZIzDt94ckfBWqtmdUEntLJDGh?usp=drive_link

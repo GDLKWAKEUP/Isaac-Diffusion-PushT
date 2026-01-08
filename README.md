@@ -1,6 +1,6 @@
 # Isaac Sim Push-T with Diffusion Policy 🤖
 
-![output](https://github.com/user-attachments/assets/2edd3736-1f48-40e3-871c-93b270edeb83)
+![output](https://github.com/user-attachments/assets/f0bcdeb3-bc54-4b89-8831-4372f7248002)
 
 [吉林大学] [电子科学与工程]
 

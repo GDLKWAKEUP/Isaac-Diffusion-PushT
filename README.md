@@ -4,8 +4,9 @@
 
 这是一个基于 **NVIDIA Isaac Sim** 和 **Diffusion Policy** 的 Sim2Real 机器人操作复现项目。
 实现了从 Blender 场景建模、Xbox 手柄遥操作数据采集、到 Diffusion Policy 模型训练及闭环推理的全流程。
+![output](https://github.com/user-attachments/assets/498093fb-8ddd-41c7-b222-9973d2b11e13)
 
-![output](https://github.com/user-attachments/assets/72ff71dc-7f46-4524-9f1c-16d8d0a6e057)
+![output](https://github.com/user-attachments/assets/d33d7c35-2b00-4aa7-866e-2b4b90260d2c)
 
 ## ✨ 主要功能 (Features)
 

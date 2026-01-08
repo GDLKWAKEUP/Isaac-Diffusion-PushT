@@ -1,13 +1,11 @@
 # Isaac Sim Push-T with Diffusion Policy 🤖
 
-![output](https://github.com/user-attachments/assets/f0bcdeb3-bc54-4b89-8831-4372f7248002)
-
 [吉林大学] [电子科学与工程]
 
 这是一个基于 **NVIDIA Isaac Sim** 和 **Diffusion Policy** 的 Sim2Real 机器人操作复现项目。
 实现了从 Blender 场景建模、Xbox 手柄遥操作数据采集、到 Diffusion Policy 模型训练及闭环推理的全流程。
 
-![Demo](docs/demo.gif)  <-- (强烈建议录个屏转成GIF放这里，效果炸裂)
+![output](https://github.com/user-attachments/assets/5c0be0b9-3066-4d18-93b0-ed6d7101932d)
 
 ## ✨ 主要功能 (Features)
 

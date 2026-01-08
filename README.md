@@ -1,5 +1,7 @@
 # Isaac Sim Push-T with Diffusion Policy 🤖
 
+![output](https://github.com/user-attachments/assets/2edd3736-1f48-40e3-871c-93b270edeb83)
+
 [吉林大学] [电子科学与工程]
 
 这是一个基于 **NVIDIA Isaac Sim** 和 **Diffusion Policy** 的 Sim2Real 机器人操作复现项目。
